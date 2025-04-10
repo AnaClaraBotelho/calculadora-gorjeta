@@ -19,7 +19,7 @@
 
                 <div class="input-box">
                     <img src="./images/icon-dollar.svg" alt="icon dollar">
-                    <input type="number" id="bill" placeholder="0">
+                    <input type="number" id="bill" placeholder="0"  oninput="receiveBillValue()">
                 </div>
             </div>
 
@@ -27,12 +27,12 @@
                 <strong>Select Tip %</strong>
 
                 <div>
-                    <button class="button-selected">5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                <input type="number" id="custom-tip"  placeholder="Custom">
+                    <button id="button-5" onclick="receiveTipPercentageValue(5)">5%</button>
+                    <button id="button-10"onclick="receiveTipPercentageValue(10)" >10%</button>
+                    <button id="button-15"onclick="receiveTipPercentageValue(15)" >15%</button>
+                    <button id="button-25"onclick="receiveTipPercentageValue(25)" >25%</button>
+                    <button id="button-50"onclick="receiveTipPercentageValue(50)" >50%</button>
+                <input type="number" id="custom-tip"  placeholder="Custom"  oninput="receiveCustomTipPercentageValue()">
                 </div>
             </div>
 
@@ -41,14 +41,14 @@
 
                 <div class="input-box">
                     <img src="./images/icon-person.svg" alt="icon icon-person">
-                    <input type="number" id="people" placeholder="0">
+                    <input type="number" id="people" placeholder="0"  oninput="receiveNumberOfPeopleValue()">
                 </div>
             </div>
         </section>
 
         <section class="results">
            <div>
-            <div class="amout">
+            <div class="amount">
                 <p>
                     Tipo Amout <br> <span>/ person</span>
                 </p>

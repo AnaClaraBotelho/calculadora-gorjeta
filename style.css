@@ -134,7 +134,7 @@ main {
     border-radius: 1.5rem;
     padding: 4rem 2.4rem 2.4rem;
 
-    .amout,
+    .amount,
     .total {
         display: flex;
         justify-content: space-between;
@@ -208,7 +208,7 @@ input::-webkit-outer-spin-button {
             flex-direction: column;
             justify-content: space-between;
 
-            .amout strong,
+            .amount strong,
             .total strond {
             font-size: 4.8rem;
             }
